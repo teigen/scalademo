@@ -62,8 +62,7 @@ trait Demo {
     (demonstration: Demonstration) => names.exists(name => demonstration.name.toUpperCase.startsWith(name.toUpperCase))
 
   def repl {
-    print("> ")
-    readLine() split ("""\s""") toList match {
+    readLine("> ") split ("""\s""") toList match {
       case "quit" :: _ => println("good bye")
       case "list" :: Nil => list(_ => true); repl
       case "run" :: Nil => run(_ => true); repl
