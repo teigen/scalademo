@@ -1,6 +1,6 @@
 package scalademo
 
-/* Copyright [yyyy] [name of copyright owner]
+/* Copyright [2009] [Jon-Anders Teige]
  *
  *  Licensed under the Apache License, Version 2.0 (the "License");
  *  you may not use this file except in compliance with the License.
@@ -38,7 +38,6 @@ object DemoTest extends Application with Demo {
 
   println("# run all containing *")
   run(_.name contains "*")
-
 //repl //for executing demos from the prompt
 
 }
