@@ -38,4 +38,7 @@ object DemoTest extends Application with Demo {
 
   println("# run all containing *")
   run(_.name contains "*")
+
+//repl //for executing demos from the prompt
+
 }
